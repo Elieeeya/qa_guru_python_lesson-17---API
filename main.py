@@ -1,23 +1,3 @@
-#  curl 'https://demowebshop.tricentis.com/addproducttocart/catalog/31/1/1' \
-#  -X 'POST' \
-#  -H 'Accept: */*' \
-#  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \
-#  -H 'Connection: keep-alive' \
-#  -H 'Content-Length: 0' \
-#  -H 'Cookie: Nop.customer=f9fe8df4-b1f8-4b90-a9ee-ba11542eb344; ARRAffinity=92eb765899e80d8de4d490df907547e5cb10de899e8b754a4d5fa1a7122fad69; ARRAffinitySameSite=92eb765899e80d8de4d490df907547e5cb10de899e8b754a4d5fa1a7122fad69' \
-#  -H 'Origin: https://demowebshop.tricentis.com' \
-#  -H 'Referer: https://demowebshop.tricentis.com/' \
-#  -H 'Sec-Fetch-Dest: empty' \
-#  -H 'Sec-Fetch-Mode: cors' \
-#  -H 'Sec-Fetch-Site: same-origin' \
-#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36' \
-#  -H 'X-Requested-With: XMLHttpRequest' \
-#  -H 'sec-ch-ua: "Google Chrome";v="105", "Not)A;Brand";v="8", "Chromium";v="105"' \
-#  -H 'sec-ch-ua-mobile: ?0' \
-#  -H 'sec-ch-ua-platform: "Windows"' \
-#  -H 'sec-gpc: 1' \
-#  --compressed
-
 from uuid import uuid4
 import requests
 
