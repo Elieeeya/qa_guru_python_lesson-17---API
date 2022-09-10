@@ -4,5 +4,5 @@ allure-pytest==2.10.0
 selene>=2.0.0b5
 python-dotenv>=0.21.0
 voluptuous~=0.13.1
-pytest_voluptuous>= 1.2.0
+pytest_voluptuous>=1.2.0
 curlify>=2.2.1
