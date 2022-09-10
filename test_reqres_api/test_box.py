@@ -48,8 +48,19 @@ def test_update():
     assert str(response.json()['job']) == 'QA Auto'
 
 
-def test_delete():
-    response = api().delete(
-        'users/345')
+def test_single_user():
+    response = api().get(
+        'users/3')
 
-    assert response.status_code == 204
+    assert response.status_code == 200
+    assert S(single_user) == response.json()
+    assert str(response.json()['data']['id']) == '3'
+    assert str(response.json()['data']['email']) == 'emma.wong@reqres.in'
+    assert str(response.json()['data']['first_name']) == 'Emma'
+    assert str(response.json()['data']['last_name']) == 'Wong'
+    assert str(response.json()['data']['avatar']) == 'https://reqres.in/img/faces/3-image.jpg'
+    assert str(response.json()['support']['url']) == 'https://reqres.in/#support-heading'
+    assert str(response.json()['support']['text']) == 'To keep ReqRes free, contributions towards server costs are appreciated!'
+
+
+
