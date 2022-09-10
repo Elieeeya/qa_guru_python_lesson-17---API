@@ -16,6 +16,7 @@ allure-report/
 
 # JetBrains
 ../../.idea/
+.idea
 *.iml
 
 # MacOS
@@ -170,8 +171,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-.env
 
+
+with_poetry/dist
 
 
 
