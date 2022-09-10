@@ -1,4 +1,4 @@
-from conftest import *
+from test_reqres_api.conftest import *
 
 
 def test_register():
